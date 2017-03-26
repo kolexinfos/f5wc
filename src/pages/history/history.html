@@ -6,13 +6,52 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton="true" color="danger">
+  <ion-navbar color="danger">
     <ion-title>Let's Take a look back</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="cards-bg icons-basic-page getstart" >
 
+
+  <ion-card>
+
+    <ion-card-content>
+      <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" [loop]="true" [autoplay]="2000">
+          <ion-slide>
+            <img src="img/f5wc.jpg" class="slide-image"/>
+          </ion-slide>
+          <ion-slide>
+            <img src="img/f5wc.jpg" class="slide-image"/>
+
+          </ion-slide>
+          <ion-slide>
+            <img src="img/f5wc.jpg" class="slide-image"/>
+
+          </ion-slide>
+          <ion-slide>
+            <img src="img/f5wc.jpg" class="slide-image"/>
+          </ion-slide>
+            <ion-slide>
+              <img src="img/f5wc.jpg" class="slide-image"/>
+
+            </ion-slide>
+            <ion-slide>
+              <img src="img/f5wc.jpg" class="slide-image"/>
+            </ion-slide>
+        </ion-slides>      
+      </ion-card-content>
+
+     
+
+  
+  </ion-card>
+  <ion-list>
+          <button ion-item (click)="itemSelected(item)">Beijing, China 2017</button>
+          <button ion-item (click)="itemSelected(item)">Dubai, UAE 2016</button>
+          <button ion-item (click)="itemSelected(item)">Tokyo, Japan 2015</button>
+          <button ion-item (click)="itemSelected(item)">Sydney, Australia 2014</button>  
+        </ion-list>
 </ion-content>

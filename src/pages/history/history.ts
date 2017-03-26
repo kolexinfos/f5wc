@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Toast} from 'ionic-native';
 
 /*
   Generated class for the History page.
@@ -17,6 +18,16 @@ export class HistoryPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HistoryPage');
+  }
+
+  itemSelected(item){
+    console.log(item);
+
+    Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
+                            toast => {
+                            console.log(toast);
+                          }
+                    );
   }
 
 }
