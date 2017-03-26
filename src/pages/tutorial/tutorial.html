@@ -15,7 +15,7 @@
 </ion-header>
 
 <ion-content no-bounce class="">
-  <ion-slides [options]="{pager: true}" (ionWillChange)="onSlideChangeStart($event)">
+  <ion-slides [options]="{pager: true}" (ionWillChange)="onSlideChangeStart($event)" [pager]="true" [autoplay]="2000" [loop]="true">
     <ion-slide *ngFor="let slide of slides">
       <img [src]="slide.image" class="slide-image"/>
       <h2 class="slide-title" [innerHTML]="slide.title" color="danger"></h2>
@@ -25,7 +25,7 @@
       <!--<img src="img/logo.png" class="slide-image"/>-->
       <!--<h2 class="slide-title">Continue?</h2>-->
       <button large clear (click)="startApp()">
-        Continue
+        <p color="danger">Continue To Main App</p>
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
     </ion-slide>

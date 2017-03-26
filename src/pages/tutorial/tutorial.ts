@@ -32,14 +32,14 @@ export class TutorialPage {
         image: 'img/logo.jpg',
       },
       {
-        title: '<b>Junglenomics</b>',
-        description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
-        image: 'img/234radio.jpg',
+        title: '',
+        description: 'The F5WC is the world\'s largest amateur 5 a side football tournament',
+        image: 'img/f5wc.jpg',
       },
       {
-        title: '<b>Junglenomics</b>',
-        description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
-        image: 'img/234radio.jpg'
+        title: '',
+        description: 'The winning team from each country win an all expenses paid trip to the World Finals in <b>Australia</b>',
+        image: 'img/f5wc.jpg'
       }
     ];
 

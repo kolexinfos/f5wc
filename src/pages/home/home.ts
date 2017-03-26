@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
-import {InAppBrowser} from 'ionic-native';
+import {InAppBrowser, Toast} from 'ionic-native';
 
 
 
@@ -34,6 +34,41 @@ export class HomePage {
 
 onSlideChangeStart(event){
   //console.log("onSlideChangeStart");
+}
+
+GoToJoin(){
+  Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
+                            toast => {
+                            console.log(toast);
+                          }
+                    );
+}
+
+GoToEnquiry(){
+     Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
+                            toast => {
+                            console.log(toast);
+                          }
+                    );
+
+}
+
+GoToHistory(){
+   Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
+                            toast => {
+                            console.log(toast);
+                          }
+                    );
+
+}
+
+GoToMore(){
+   Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
+                            toast => {
+                            console.log(toast);
+                          }
+                    );
+
 }
 
 
