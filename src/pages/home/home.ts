@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import {InAppBrowser, Toast} from 'ionic-native';
 
-
+import { HistoryPage } from '../history/history';
 
 
 
@@ -54,22 +54,14 @@ GoToEnquiry(){
 }
 
 GoToHistory(){
-   Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
-                            toast => {
-                            console.log(toast);
-                          }
-                    );
-
+   this.navCtrl.push(HistoryPage);
 }
 
 GoToMore(){
    Toast.show("Slow down chief this page is under construction.", "long", 'bottom').subscribe(
                             toast => {
-                            console.log(toast);
-                          }
-                    );
-
-}
+                            console.log(toast);});
+  }
 
 
 

@@ -49,20 +49,7 @@ export class TutorialPage {
     });
   }
 
-  startPlaying() {
-    let loadingPopup = this.loadingCtrl.create({
-      content: 'Loading please wait...'
-    });
-
-    loadingPopup.present();
-
-    this.player.play().then(() => {
-      console.log('Playing');
-      loadingPopup.dismiss();
-    });
-  }
   startApp() {
-
     this.navCtrl.setRoot(HomePage);
   }
 
